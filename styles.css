@@ -1,0 +1,477 @@
+
+
+header {
+  background-color: rgb(189, 9, 9);
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  margin-left: 0;
+}
+
+.links li {
+  margin-right: 10px;
+}
+
+.links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.search-form {
+  margin-left: auto;
+  display: flex;
+}
+
+.search-form input[type="text"] {
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  margin-right: 5px;
+}
+
+.search-form button {
+  padding: 5px 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 3px;
+  color: #333;
+  cursor: pointer;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+}
+
+.form-group input[type="radio"],
+.form-group input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+
+
+
+/* Style for the slideshow container */
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+  
+/* Style for the slides */
+.slideshow .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    background-position: center;
+    background-size: cover;
+}
+  
+/* Style for the active slide */
+.slideshow .slide.active {
+    opacity: 1;
+}
+  
+/* Style for the movie names */
+.movie-names {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: yellow; /* Change color to a bright orange */
+  font-size: 24px; /* Increase font size for better visibility */
+  font-family: Arial, sans-serif; /* Change font to a common sans-serif font */
+  z-index: 2;
+}
+
+    
+/* Style for the icons */
+.icons {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+    
+.icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: yellow; /* Change color to a bright orange */
+    font-size: 24px;
+    text-decoration: none;
+}
+    
+.icons span {
+    display: inline-block;
+    color:  white; /* Change color to a bright orange */
+    font-size: 24px;
+}
+.slideshow img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-position: center center;
+}
+
+.trending {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+    text-decoration: none;
+      }
+      
+    .trending h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-decoration: none;
+        }
+        
+    .trending-slideshow {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        margin-bottom: 15px;
+        }
+        
+    .trending-slide {
+        flex: 0 0 300px;
+        margin-right: 20px;
+        scroll-snap-align: center;
+        }
+        
+    .trending-slide img {
+        width: 100%;
+        height: 400px;
+        }
+        
+        
+    .trending-slideshow::-webkit-scrollbar {
+        display: none;
+        }
+
+    .homepage-text {
+        text-align: center;
+        text-decoration: none;
+        }
+
+
+
+
+
+
+
+
+
+
+body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    
+    footer {
+      background-color: rgb(189, 9, 9);
+      color:  white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      margin-top: auto;
+    }
+    
+    .footer-left {
+      display: flex;
+      align-items: center;
+    }
+    
+    .footer-left img {
+      width: 100px;
+      height: 100px;
+      margin-right: 20px;
+    }
+    
+    .footer-left p {
+      margin: 0;
+    }
+    
+    .footer-right {
+      display: flex;
+    }
+    
+    .footer-right a {
+      display: block;
+      margin-right: 10px;
+    }
+    
+    .footer-right img {
+      width: 40px;
+      height: 40px;
+    }
+    
+    .footer-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    
+    .footer-buttons a {
+      background-color: #fff;
+      color: #333;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    
+    .footer-buttons a:hover {
+      background-color: #ccc;
+    }
+    
+    @media (max-width: 768px) {
+      .footer-left {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+      }
+      
+      .footer-right {
+        flex-basis: 100%;
+      }
+    }
+
+
+
+
+
+      .movie-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        animation-name: fade-in;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+      }
+      
+      .movie-poster {
+        flex: 0 0 auto;
+        margin-right: 20px;
+      }
+      
+      .movie-poster img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      .movie-info {
+        flex: 1 1 auto;
+        max-width: 600px;
+      }
+      
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    
+
+.container {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  }
+.card {
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin: 16px;
+  padding: 16px;
+  text-align: center;
+  transition: box-shadow 0.3s;
+  width: 200px;
+ }
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  object-position: center;
+        }
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+ }
+.card p {
+  font-size: 16px;
+  margin-top: 8px;
+ }
+    
+    
+
+
+
+
+
+  /* Center the form */
+  #feedback-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  /* Style form elements */
+  #feedback-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  #feedback-form input[type="checkbox"],
+  #feedback-form input[type="radio"] {
+    margin-right: 5px;
+  }
+
+  #feedback-form input[type="text"] {
+    padding: 5px;
+    width: 200px;
+    margin-bottom: 10px;
+  }
+
+  #feedback-form .center {
+    display: block;
+    margin: 20px auto;
+  }
+
+  /* Style thank you message and banner image */
+  #feedback-form p {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  #feedback-form .center-banner {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  #feedback-form .center-banner img {
+    max-width: 100%;
+    height: auto;
+  }
+  /* Center the form */
+#feedback-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  margin-top: 50px;
+  margin-left: 50px; /* Adjust the margin as needed */
+}
+
+/* Style form elements */
+#feedback-form label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 18px; /* Adjust the font size as desired */
+  font-weight: bold;
+}
+
+#feedback-form input[type="checkbox"],
+#feedback-form input[type="radio"] {
+  margin-right: 5px;
+}
+
+#feedback-form input[type="text"] {
+  padding: 5px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+#feedback-form .center {
+  display: block;
+  margin: 20px 0;
+}
+
+/* Style thank you message and banner image */
+#feedback-form p {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#feedback-form .center-banner {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#feedback-form .center-banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Additional styles for left-aligned labels and attractive inputs */
+#feedback-form input[type="radio"],
+#feedback-form input[type="checkbox"] {
+  transform: scale(1.2); /* Increase the size of radio and checkbox inputs */
+  margin-right: 10px;
+}
+
+#feedback-form input[type="text"] {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+#feedback-form input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#feedback-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+

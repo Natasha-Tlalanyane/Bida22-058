@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Warner Bros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="styles.css">
+  </head>
+
+  
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a href="index.html">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Warner_Bros_logo.svg/1965px-Warner_Bros_logo.svg.png" alt="Logo" height="30px" width="30px"></a>
+      </div>
+      <ul class="links">
+        <li><a href="Movies.html">Movies</a></li>
+        <li><a href="TvShows.html">TVShows</a></li>
+        <li><a href="Games&Apps.html">Games&Apps</a></li>
+        <li><a href="Collections.html">Collections</a></li>
+      </ul>
+      <form class="search-form" action="#" method="GET">
+        <input type="text" name="search" placeholder="Search...">
+        <button type="submit">Search</button>
+      </form>
+    </nav>
+  </header>
+  
+  <body>
+    <div class="slideshow">
+        <div class="slide active">
+            <div class="movie-names">Godzilla vs Kong</div>
+          <img src="https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/1613405559111-J0X8VFF98VKKI08EYVSL/image-asset.jpeg">
+          <div class="icons">
+            <a href="#">▶</a>
+            <span>PG13</span>
+          </div>
+        </div>
+        <div class="slide">
+            <div class="movie-names">Space Jam: A new Legacy</div>
+          <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5298bac0-b8bf-4c80-af67-725c1272dbb0/ddwb3e8-d89478c6-42f9-4c4b-a22f-62c4493263ed.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUyOThiYWMwLWI4YmYtNGM4MC1hZjY3LTcyNWMxMjcyZGJiMFwvZGR3YjNlOC1kODk0NzhjNi00MmY5LTRjNGItYTIyZi02MmM0NDkzMjYzZWQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.JRTPEmPyguMKp9ooPGC5w_yeVp3W1EpXx547mximWvo">
+          <div class="icons">
+            <a href="#">▶</a>
+            <span>PG10</span>
+          </div>
+        </div>
+        <div class="slide">
+            <div class="movie-names">Shazam! Fury of the Gods</div>
+          <img src="https://wikiofnerds.com/wp-content/uploads/2023/03/Shazam-2-Is-This-The-End-For-the-DC-Superhero.jpg">
+          <div class="icons">
+            <a href="#">▶</a>
+            <span>PG13</span>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        var slides = document.querySelectorAll('.slide');
+        var currentSlide = 0;
+        var slideInterval = setInterval(nextSlide, 3000);
+    
+        function nextSlide() {
+          slides[currentSlide].className = 'slide';
+          currentSlide = (currentSlide + 1) % slides.length;
+          slides[currentSlide].className = 'slide active';
+        }
+      </script>
+     
+     <div class="trending">
+        <h1 class="homepage-text">Continue To Follow</h1>
+        <div class="trending-slideshow">
+          <div class="trending-slide">
+            <a href="Showing1.html">
+              <img src="https://m.media-amazon.com/images/M/MV5BMzk2ZmYxNTUtODlhMi00NzE2LTkwMTctYjg0ODQ1ZjkyNzJmXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_.jpg" alt="Godzilla vs Kong">
+              <h3 class="homepage-text">Godzilla vs Kong</h3>
+            </a>
+          </div>
+          <div class="trending-slide">
+            <a href="Showing6.html">
+              <img src="https://m.media-amazon.com/images/M/MV5BYjI3NDg0ZTEtMDEwYS00YWMyLThjYjktMTNlM2NmYjc1OGRiXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg" alt="Zack Snyder's Justice League">
+              <h3 class="homepage-text">Zack Snyder's Justice League</h3>
+            </a>
+          </div>
+          <div class="trending-slide">
+            <a href="TvShow6.html">
+              <img src="https://m.media-amazon.com/images/M/MV5BYTM0NjZjYjItM2JiYS00NmU5LWJmMTMtZjQ0OWU3Mzk1ZWZjXkEyXkFqcGdeQXVyMTAxNDE3MTE5._V1_.jpg" alt="The Sandman">
+              <h3 class="homepage-text">The Sandman</h3>
+            </a>
+          </div>
+          <div class="trending-slide">
+            <a href="Trending1.html">
+              <img src="https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_FMjpg_UX1000_.jpg" alt="The Batman">
+              <h3 class="homepage-text">The Batman</h3>
+            </a>
+          </div>
+          <div class="trending-slide">
+            <a href="TvShow5.html">
+              <img src="https://m.media-amazon.com/images/M/MV5BMmUyOTdjMGEtN2RmNC00YzUwLTg5ZDEtMTI1NWE4ZjcwN2ViXkEyXkFqcGdeQXVyNTA3MTU2MjE@._V1_FMjpg_UX1000_.jpg" alt="Gotham">
+              <h3 class="homepage-text">Gotham</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
+      
+      <div class="trending">
+        <h1 class="homepage-text">New Releases</h1>
+        <div class="trending-slideshow">
+          <div class="trending-slide">
+            <a href="mike.html">
+              <img src="https://m.media-amazon.com/images/M/MV5BMTg4ZWZhODQtNWVhNC00NjA1LWJhZjgtZTFkY2JmNWJlYzU0XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg" alt="Magic Mikes Last Dance">
+              <h3 class="homepage-text">Magic Mikes Last Dance</h3>
+            </a>
+          </div>
+          <div class="trending-slide">
+            <a href="Mummies.html">
+              <img src="https://m.media-amazon.com/images/M/MV5BZWU0ZjJiOGItZDUwNy00MDE1LTk2ZjEtY2YwMzQxZGJjYjFjXkEyXkFqcGdeQXVyNzc5MjA3OA@@._V1_FMjpg_UX1000_.jpg" alt="Mummies">
+              <h3 class="homepage-text">Mummies</h3>
+            </a>
+          </div>
+          <div class="trending-slide">
+            <a href="TvShow6.html">
+              <img src="https://m.media-amazon.com/images/M/MV5BYTM0NjZjYjItM2JiYS00NmU5LWJmMTMtZjQ0OWU3Mzk1ZWZjXkEyXkFqcGdeQXVyMTAxNDE3MTE5._V1_.jpg" alt="The Sandman">
+              <h3 class="homepage-text">The Sandman</h3>
+            </a>
+          </div>
+          <div class="trending-slide">
+            <a href="Trending1.html">
+              <img src="https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_FMjpg_UX1000_.jpg" alt="The Batman">
+              <h3 class="homepage-text">The Batman</h3>
+            </a>
+          </div>
+          <div class="trending-slide">
+            <a href="Party.html">
+              <img src="https://m.media-amazon.com/images/M/MV5BZDgyYjYwNjAtOWY4MS00YzBkLWFlNTktNDk5ZmQwZGI2OWQwXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" alt="House Party">
+              <h3 class="homepage-text">House Party</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="trending">
+        <h1 class="homepage-text">Coming Soon</h1>
+        <div class="trending-slideshow">
+          <div class="trending-slide">
+            <a href="man.html">
+              <img src="https://m.media-amazon.com/images/M/MV5BMjVmNTg5NTMtMWFmYi00ZGU5LTlkYzUtMjY0NDQwYmY3NGNiXkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_.jpg" alt="Aquaman">
+              <h3 class="homepage-text">Aquaman</h3>
+            </a>
+          </div>
+          <div class="trending-slide">
+            <a href="beetle.html">
+              <img src="https://m.media-amazon.com/images/M/MV5BOGI4YTI5ZDQtNjY4Ny00YTg3LTkwNDUtOGJjMjIxZDU3MzZiXkEyXkFqcGdeQXVyNzc3NzAwMzc@._V1_.jpg" alt="Blue Beetle">
+              <h3 class="homepage-text">Blue Beetle</h3>
+            </a>
+          </div>
+          <div class="trending-slide">
+            <a href="Meg.html">
+              <img src="https://m.media-amazon.com/images/M/MV5BZmNjMzkyODYtZjgxNS00ZDJiLTlmYzQtZGEzNDdmOTZjZTIxXkEyXkFqcGdeQXVyMTU0ODY5OTAx._V1_FMjpg_UX1000_.jpg" alt="Meg 2: The Trench">
+              <h3 class="homepage-text">Meg 2: The Trench</h3>
+            </a>
+          </div>
+          <div class="trending-slide">
+            <a href="Coming1.html">
+              <img src="https://m.media-amazon.com/images/M/MV5BOWIwZGY0OTYtZjUzYy00NzRmLTg5YzgtYWMzNWQ0MmZiY2MwXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UX1000_.jpg" alt="Barbie">
+              <h3>Barbie</h3>
+            </a>
+          </div>
+          <div class="trending-slide">
+            <a href="Coming2.html">
+              <img src="https://m.media-amazon.com/images/M/MV5BMmZiN2VmMjktZDE5OC00ZWRmLWFlMmEtYWViMTY4NjM3ZmNkXkEyXkFqcGdeQXVyMTI2MTc2ODM3._V1_FMjpg_UX1000_.jpgg" alt="Evil Dead Rise">
+              <h3>Evil Dead Rise</h3>
+            </a>
+          </div>
+          <div class="trending-slide">
+            <a href="Coming3.html">
+              <img src="https://m.media-amazon.com/images/M/MV5BMDFhZTc3NWQtY2UyZS00OGYzLTgxNTUtYjYxMjZjMmEyMjcwXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" alt="The Flash ">
+              <h3>The Flash </h3>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="trending">
+        <h1 class="homepage-text">Movie and TV Faves</h1>
+        <div class="trending-slideshow">
+          <div class="trending-slide">
+            <a href="Showing1.html">
+              <img src="https://m.media-amazon.com/images/M/MV5BMzk2ZmYxNTUtODlhMi00NzE2LTkwMTctYjg0ODQ1ZjkyNzJmXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_.jpg" alt="Godzilla vs Kong">
+              <h3 class="homepage-text">Godzilla vs Kong</h3>
+            </a>
+          </div>
+          <div class="trending-slide">
+            <a href="Showing6.html">
+              <img src="https://m.media-amazon.com/images/M/MV5BYjI3NDg0ZTEtMDEwYS00YWMyLThjYjktMTNlM2NmYjc1OGRiXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg" alt="Zack Snyder's Justice League">
+              <h3 class="homepage-text">Zack Snyder's Justice League</h3>
+            </a>
+          </div>
+          <div class="trending-slide">
+            <a href="TvShow6.html">
+              <img src="https://m.media-amazon.com/images/M/MV5BYTM0NjZjYjItM2JiYS00NmU5LWJmMTMtZjQ0OWU3Mzk1ZWZjXkEyXkFqcGdeQXVyMTAxNDE3MTE5._V1_.jpg" alt="The Sandman">
+              <h3 class="homepage-text">The Sandman</h3>
+            </a>
+          </div>
+          <div class="trending-slide">
+            <a href="Trending1.html">
+              <img src="https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_FMjpg_UX1000_.jpg" alt="The Batman">
+              <h3 class="homepage-text">The Batman</h3>
+            </a>
+          </div>
+          <div class="trending-slide">
+            <a href="TvShow5.html">
+              <img src="https://m.media-amazon.com/images/M/MV5BMmUyOTdjMGEtN2RmNC00YzUwLTg5ZDEtMTI1NWE4ZjcwN2ViXkEyXkFqcGdeQXVyNTA3MTU2MjE@._V1_FMjpg_UX1000_.jpg" alt="Gotham">
+              <h3 class="homepage-text">Gotham</h3>
+            </a>
+          </div>
+          <div class="trending-slide">
+            <a href="Binge1.html">
+              <img src="https://m.media-amazon.com/images/M/MV5BY2FmZTY5YTktOWRlYy00NmIyLWE0ZmQtZDg2YjlmMzczZDZiXkEyXkFqcGdeQXVyNjg4NzAyOTA@._V1_.jpg" alt="The Big Bang Theory">
+              <h3 class="homepage-text">The Big Bang Theory</h3>
+            </a>
+          </div>
+          <div class="trending-slide">
+            <a href="Binge2.html">
+              <img src="https://m.media-amazon.com/images/M/MV5BNDVkYjU0MzctMWRmZi00NTkxLTgwZWEtOWVhYjZlYjllYmU4XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg" alt="Friends">
+              <h3 class="homepage-text">Friends</h3>
+            </a>
+          </div>
+          <div class="trending-slide">
+            <a href="Binge3.html">
+              <img src="https://m.media-amazon.com/images/M/MV5BZDJjOTg4OWYtYWIyOS00MjQ3LTg5ZDktYzU2N2RkNmYzNjZlXkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_FMjpg_UX1000_.jpg" alt="You">
+              <h3 class="homepage-text">You</h3>
+            </a>
+          </div>
+          <div class="trending-slide">
+            <a href="Binge4.html">
+              <img src="https://m.media-amazon.com/images/M/MV5BOGRlMmE3MzgtNDlhYi00MWQyLWE2MmQtMDE2MjdlNDUxMWE5XkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_.jpg" alt="Abbott Elementary">
+              <h3 class="homepage-text">Abbott Elementary</h3>
+            </a>
+          </div>
+          <div class="trending-slide">
+            <a href="TvShow2.html">
+              <img src="https://m.media-amazon.com/images/M/MV5BZDg3MGNhYjItZGU2Yi00MzU4LWE4NGUtYjA2OTVjNGUyMjE4XkEyXkFqcGdeQXVyNjg4NzAyOTA@._V1_FMjpg_UX1000_.jpg" alt="Young Sheldon">
+              <h3 class="homepage-text">Young Sheldon</h3>
+            </a>
+          </div>
+          <div class="trending-slide">
+            <a href="TvShow3.html">
+              <img src="https://m.media-amazon.com/images/M/MV5BMTdmZjBjZjQtY2JiNS00Y2ZlLTg2NzgtMjUzMGY2OTVmOWJiXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg" alt="Ted Lasso">
+              <h3 class="homepage-text">Ted Lasso</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+
+
+  </body>
+  
+
+
+
+<footer>
+    <div class="footer-left">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Warner_Bros_logo.svg/1965px-Warner_Bros_logo.svg.png" alt="Logo">
+      <p>TM & 2023 Warner Bros Entertainment Inc</p>
+    </div>
+    <div class="footer-right">
+      <a href="https://web.facebook.com/WarnerBrosPictures"><img src="https://img.freepik.com/premium-vector/blue-social-media-logo_197792-1759.jpg" alt="Facebook"></a>
+      <a href="https://twitter.com/wbpictures"><img src="https://img.freepik.com/free-icon/twitter_318-674515.jpg" alt="Twitter"></a>
+      <a href="https://www.instagram.com/wbpictures/?hl=en"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" alt="Instagram"></a>
+    </div>
+    <div class="footer-buttons">
+      <a href="Feedback.html">Feedback</a>
+      <a href="https://www.warnerbros.com/studio/about/company-overview">Company</a>
+      <a href="https://www.warnerbros.com/news/press-releases">Press Releases</a>
+      <a href="https://policies.warnerbros.com/privacy/en-us/">Privacy Policy</a>
+  </div>
+  </footer>
+
+
+  
+  
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Warner Bros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="styles.css">
+  </head>
+
+  
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a href="index.html">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Warner_Bros_logo.svg/1965px-Warner_Bros_logo.svg.png" alt="Logo" height="30px" width="30px"></a>
+      </div>
+      <ul class="links">
+        <li><a href="Movies.html">Movies</a></li>
+        <li><a href="TvShows.html">TVShows</a></li>
+        <li><a href="Games&Apps.html">Games&Apps</a></li>
+        <li><a href="Collections.html">Collections</a></li>
+      </ul>
+      <form class="search-form" action="#" method="GET">
+        <input type="text" name="search" placeholder="Search...">
+        <button type="submit">Search</button>
+      </form>
+    </nav>
+  </header>
+  
+  
+  <body>
+    <div class="slideshow">
+        <div class="slide active">
+            <div class="movie-names">Young Sheldon</div>
+          <img src="https://e0.pxfuel.com/wallpapers/784/594/desktop-wallpaper-young-sheldon-the-big-bang-theory-spin-off.jpg" alt="Young Sheldon">
+          <div class="icons">
+            <a href="#">▶</a>
+            <span>PG13</span>
+          </div>
+        </div>
+        <div class="slide">
+            <div class="movie-names">The Vampire Diaries</div>
+          <img src="https://e1.pxfuel.com/desktop-wallpaper/650/634/desktop-wallpaper-the-vampire-diaries-9-tvd.jpg" alt="The Vampire Diaries">
+          <div class="icons">
+            <a href="#">▶</a>
+            <span>PG10</span>
+          </div>
+        </div>
+        <div class="slide">
+            <div class="movie-names">Two and A Half Men</div>
+          <img src="https://e0.pxfuel.com/wallpapers/127/615/desktop-wallpaper-two-and-a-half-men.jpg" alt="Two and A half Men">
+          <div class="icons">
+            <a href="#">▶</a>
+            <span>13</span>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        var slides = document.querySelectorAll('.slide');
+        var currentSlide = 0;
+        var slideInterval = setInterval(nextSlide, 3000);
+    
+        function nextSlide() {
+          slides[currentSlide].className = 'slide';
+          currentSlide = (currentSlide + 1) % slides.length;
+          slides[currentSlide].className = 'slide active';
+        }
+      </script>
+     
+     <div class="trending">
+      <h1 class="homepage-text">New Series</h1>
+      <div class="trending-slideshow">
+        <div class="trending-slide">
+          <a href="TvShow1.html">
+            <img src="https://m.media-amazon.com/images/M/MV5BZjlkM2RjODgtNjRlYS00MDNjLTkxMzYtOWM4NjAwZTY2MjZiXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UX1000_.jpg" alt="The Flash">
+            <h3 class="homepage-text">The Flash</h3>
+          </a>
+        </div>
+        <div class="trending-slide">
+          <a href="TvShow2.html">
+            <img src="https://m.media-amazon.com/images/M/MV5BZDg3MGNhYjItZGU2Yi00MzU4LWE4NGUtYjA2OTVjNGUyMjE4XkEyXkFqcGdeQXVyNjg4NzAyOTA@._V1_FMjpg_UX1000_.jpg" alt="Young Sheldon">
+            <h3 class="homepage-text">Young Sheldon</h3>
+          </a>
+        </div>
+        <div class="trending-slide">
+          <a href="TvShow3.html">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTdmZjBjZjQtY2JiNS00Y2ZlLTg2NzgtMjUzMGY2OTVmOWJiXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg" alt="Ted Lasso">
+            <h3 class="homepage-text">Ted Lasso</h3>
+          </a>
+        </div>
+        <div class="trending-slide">
+          <a href="TvShow4.html">
+            <img src="https://m.media-amazon.com/images/M/MV5BNjY4MTE3MWYtYzU3YS00Y2UxLTk2NDMtMjJlODk2MzBmOTdiXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UX1000_.jpg" alt="Titans">
+            <h3 class="homepage-text">Titans</h3>
+          </a>
+        </div>
+        <div class="trending-slide">
+          <a href="TvShow5.html">
+            <img src="https://m.media-amazon.com/images/M/MV5BMmUyOTdjMGEtN2RmNC00YzUwLTg5ZDEtMTI1NWE4ZjcwN2ViXkEyXkFqcGdeQXVyNTA3MTU2MjE@._V1_FMjpg_UX1000_.jpg" alt="Gotham">
+            <h3 class="homepage-text">Gotham</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="trending">
+      <h1 class="homepage-text">Returning Series</h1>
+      <div class="trending-slideshow">
+        <div class="trending-slide">
+          <a href="Binge1.html">
+            <img src="https://m.media-amazon.com/images/M/MV5BY2FmZTY5YTktOWRlYy00NmIyLWE0ZmQtZDg2YjlmMzczZDZiXkEyXkFqcGdeQXVyNjg4NzAyOTA@._V1_.jpg" alt="The Big Bang Theory">
+            <h3 class="homepage-text">The Big Bang Theory</h3>
+          </a>
+        </div>
+        <div class="trending-slide">
+          <a href="Binge2.html">
+            <img src="https://m.media-amazon.com/images/M/MV5BNDVkYjU0MzctMWRmZi00NTkxLTgwZWEtOWVhYjZlYjllYmU4XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg" alt="Friends">
+            <h3 class="homepage-text">Friends</h3>
+          </a>
+        </div>
+        <div class="trending-slide">
+          <a href="Binge3.html">
+            <img src="https://m.media-amazon.com/images/M/MV5BZDJjOTg4OWYtYWIyOS00MjQ3LTg5ZDktYzU2N2RkNmYzNjZlXkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_FMjpg_UX1000_.jpg" alt="You">
+            <h3 class="homepage-text">You</h3>
+          </a>
+        </div>
+        <div class="trending-slide">
+          <a href="Binge4.html">
+            <img src="https://m.media-amazon.com/images/M/MV5BOGRlMmE3MzgtNDlhYi00MWQyLWE2MmQtMDE2MjdlNDUxMWE5XkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_.jpg" alt="Abbott Elementary">
+            <h3 class="homepage-text">Abbott Elementary</h3>
+          </a>
+        </div>
+        <div class="trending-slide">
+          <a href="Binge5.html">
+            <img src="https://m.media-amazon.com/images/M/MV5BNDJjMzc4NGYtZmFmNS00YWY3LThjMzQtYzJlNGFkZGRiOWI1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg" alt="Lucifer">
+            <h3 class="homepage-text">Lucifer</h3>
+          </a>
+        </div>
+        <div class="trending-slide">
+          <a href="Binge6.html">
+            <img src="https://m.media-amazon.com/images/M/MV5BMDk3YzgxNDQtNTEzOS00NDMyLWFlYmYtYTZlMDk1NDkxNmMyXkEyXkFqcGdeQXVyNzA5NjUyNjM@._V1_FMjpg_UX1000_.jpg" alt="The Vampire Diaries">
+            <h3 class="homepage-text">The Vampire Diaries</h3>
+          </a>
+        </div>
+        <div class="trending-slide">
+          <a href="Binge7.html">
+            <img src="https://m.media-amazon.com/images/M/MV5BOTI2MjIzN2ItZDg0OS00MTlhLWIzMTMtYWI4ZTA0NGE4NDJlXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg" alt="Two and a Half Men">
+            <h3 class="homepage-text">Two and a Half Men</h3>
+          </a>
+        </div>
+      </div>
+    </div>  
+    
+
+      
+  </body>
+  
+  <footer>
+    <div class="footer-left">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Warner_Bros_logo.svg/1965px-Warner_Bros_logo.svg.png" alt="Logo">
+      <p>TM & 2023 Warner Bros Entertainment Inc</p>
+    </div>
+    <div class="footer-right">
+      <a href="https://web.facebook.com/WarnerBrosPictures"><img src="https://img.freepik.com/premium-vector/blue-social-media-logo_197792-1759.jpg" alt="Facebook"></a>
+      <a href="https://twitter.com/wbpictures"><img src="https://img.freepik.com/free-icon/twitter_318-674515.jpg" alt="Twitter"></a>
+      <a href="https://www.instagram.com/wbpictures/?hl=en"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" alt="Instagram"></a>
+    </div>
+    <div class="footer-buttons">
+        <a href="Feedback.html">Feedback</a>
+        <a href="Company.html">Company</a>
+        <a href="Press.html">Press Releases</a>
+        <a href="Privacy.html">Privacy Policy</a>
+    </div>
+  </footer>
+  
+  
+</html>

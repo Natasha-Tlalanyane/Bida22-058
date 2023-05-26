@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+ .form-group {
+    display: flex;
+    align-items: center;
+  }
+
+  .form-group input[type="radio"],
+  .form-group input[type="checkbox"] {
+    margin-right: 10px;
+  }
+</style>
+</head>
+
+
+  
+<header>
+  <nav class="navbar">
+    <div class="logo"><a href="index.html">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Warner_Bros_logo.svg/1965px-Warner_Bros_logo.svg.png" alt="Logo" height="30px" width="30px"></a>
+    </div>
+    <ul class="links">
+      <li><a href="Movies.html">Movies</a></li>
+      <li><a href="TvShows.html">TVShows</a></li>
+      <li><a href="Games&Apps.html">Games&Apps</a></li>
+      <li><a href="Collections.html">Collections</a></li>
+    </ul>
+    <form class="search-form" action="#" method="GET">
+      <input type="text" name="search" placeholder="Search...">
+      <button type="submit">Search</button>
+    </form>
+  </nav>
+</header>
+
+  
+<body>
+
+
+  <form id="feedback-form" onsubmit="submitForm(event)">
+    <h1>PLEASE TELL US ABOUT YOUR VISIT TO WARNERBROS</h1>
+   
+    <label for="gender">Gender:</label>
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female
+    <input type="radio" name="gender" value="other"> Other
+
+    <br><br>
+
+    <label for="age">Age:</label>
+    <input type="text" name="age" id="age">
+    </div>
+
+    <br><br>
+
+    <label for="favorite-movies">Favorite Types of Movies (Select up to 3):</label>
+    <br>
+      <label for="favorite-movies">Favorite Types of Movies (Select up to 3):</label>
+      <input type="checkbox" name="favorite-movies" value="action-adventure"> Action & Adventure
+      <input type="checkbox" name="favorite-movies" value="animation"> Animation
+      <input type="checkbox" name="favorite-movies" value="drama"> Drama
+      <input type="checkbox" name="favorite-movies" value="horror"> Horror
+      <input type="checkbox" name="favorite-movies" value="comedy"> Comedy
+      <input type="checkbox" name="favorite-movies" value="other"> Other
+    
+      <br><br>
+    
+    
+    <label for="watch-reason">Why do you watch movies?</label>
+    <br>
+    <input type="checkbox" name="watch-reason" value="bored"> I am bored
+    <input type="checkbox" name="watch-reason" value="hang-with-friends"> Just to hang with friends
+    <input type="checkbox" name="watch-reason" value="interested-movies"> Interested in particular movies
+    <input type="checkbox" name="watch-reason" value="like-actors-actresses"> I like the actors & actresses
+  
+    <br><br>
+
+    
+    <label for="recommend-site">Would you recommend the site to friends and family?</label>
+    <br>
+    <input type="radio" name="recommend-site" value="yes"> Yes
+    <input type="radio" name="recommend-site" value="no"> No
+    
+    <br><br>
+
+    <input type="submit" value="Submit" class="center">
+  </form>
+
+
+<script>
+function submitForm(event) {
+  event.preventDefault(); // Prevent form submission
+
+  // Open the thank you page
+  window.open("Thankyou.html", "_blank");
+
+  // Automatically close the thank you page after 5 seconds
+  setTimeout(function () {
+    window.close();
+  }, 5000);
+}
+</script>
+</body>
+
+
+<footer>
+    <div class="footer-left">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Warner_Bros_logo.svg/1965px-Warner_Bros_logo.svg.png" alt="Logo">
+      <p>TM & 2023 Warner Bros Entertainment Inc</p>
+    </div>
+    <div class="footer-right">
+      <a href="https://web.facebook.com/WarnerBrosPictures"><img src="https://img.freepik.com/premium-vector/blue-social-media-logo_197792-1759.jpg" alt="Facebook"></a>
+      <a href="https://twitter.com/wbpictures"><img src="https://img.freepik.com/free-icon/twitter_318-674515.jpg" alt="Twitter"></a>
+      <a href="https://www.instagram.com/wbpictures/?hl=en"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" alt="Instagram"></a>
+    </div>
+    <div class="footer-buttons">
+        <a href="Feedback.html">Feedback</a>
+        <a href="Company.html">Company</a>
+        <a href="Press.html">Press Releases</a>
+        <a href="Privacy.html">Privacy Policy</a>
+    </div>
+  </footer>
+  
+  
+</html>
